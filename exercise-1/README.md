@@ -7,6 +7,7 @@ This week, we're going to create a TODO list app. The first step is to set up th
 3. Each TODO item should have a checkbox and a corresponding label
 
 Bonus:
+
 1. Use CSS to make the text input bigger
 
 ![TODO Demo](images/todo-demo.gif)
