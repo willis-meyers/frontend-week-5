@@ -15,4 +15,8 @@ BONUS:
 1. Make buttons that, when clicked, filter all done items and not done items
 2. Make a button for each of your todo items for completely deleting that item
 
+BONUS BONUS:
+
+1. Use CSS to make the list look better and the buttons aligned
+
 ![TODO Demo](images/todo-demo2.gif)
