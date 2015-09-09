@@ -2,20 +2,20 @@
 var addTodoItem = (function () {
 
   var count = 0;
+  var todolist    = document.getElementById("todolist");
+  var item        = document.getElementById("item");
 
   function addTodoItemInner (event) {
     event.preventDefault(); // necessary to prevent the submitting of a form
-    var todolist    = document.getElementById("todolist");
-    var item        = document.getElementById("item");
-    var li          = document.createElement("li");
+    var li = document.createElement("li");
+    var label       = document.createElement("label");
+    var checkbox    = document.createElement("input");
 
     // Step 1
     li.id = "item-" + count;
     count++;
 
-    var label       = document.createElement("label");
-    var checkbox    = document.createElement("input");
-    checkbox.type   = "checkbox";
+    checkbox.type = "checkbox";
 
     // Step 2
     checkbox.addEventListener("change", function(event){
@@ -23,9 +23,8 @@ var addTodoItem = (function () {
       // https://developer.mozilla.org/en-US/docs/Web/API/Element/closest
       var li = cb.closest("li")
       if(cb.checked){
-
         li.className = "done";
-        console.log(li.id)
+        console.log(li.id) // Step 3
       } else {
         li.className = "";
       }
