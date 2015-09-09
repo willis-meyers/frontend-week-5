@@ -1,4 +1,3 @@
-
 function addTodoItem(event) {
   event.preventDefault(); // necessary to prevent the submitting of a form
   var todolist    = document.getElementById("todolist");
