@@ -2,3 +2,12 @@
   font-family: Arial;
 }
 
+ul {
+list-style-type: none;
+padding:0;
+margin:0;
+}
+
+input:checked+label{
+    color:blue;
+}
